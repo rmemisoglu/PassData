@@ -1,8 +1,8 @@
 //
-//  SecondViewController.swift
+//  UnwindBackViewController.swift
 //  PassData
 //
-//  Created by Ramazan Memişoğlu on 23.10.2019.
+//  Created by Ramazan Memişoğlu on 25.10.2019.
 //  Copyright © 2019 Ramazan Memişoğlu. All rights reserved.
 //
 
@@ -21,7 +21,11 @@ class UnwindBackViewController: UIViewController {
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "BackToA" {
-            sendData = "Back To Unwind"
+            if txt.text == "" || txt.text == nil{
+                sendData = "Back To Unwind"
+            } else {
+                sendData = txt.text!
+            }
         }
     }
     override func viewDidLoad() {

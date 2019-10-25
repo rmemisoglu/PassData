@@ -13,6 +13,7 @@ class ViewController: UIViewController,MyDataSendingDelegate {
     
     @IBOutlet weak var lbl : UILabel!
     @IBOutlet weak var txt : UITextField!
+    var text : String = ""
     override func viewDidLoad() {
         let notificationCenter: NotificationCenter = NotificationCenter.default
         notificationCenter.addObserver(self, selector: #selector(self.notificationBack(myData:)), name: .notifyA, object: nil)
@@ -31,14 +32,41 @@ class ViewController: UIViewController,MyDataSendingDelegate {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
-        if segue.destination is SecondViewController
+        
+        if txt.text == "" || txt.text == nil{
+            text = "Receive from A with Storyboard Segue"
+        }
+        else {
+            text = txt.text!
+        }
+        
+        if segue.destination is UnwindBackViewController
         {
-            let vc = segue.destination as? SecondViewController
-            vc?.text = txt.text!
+            let vc = segue.destination as? UnwindBackViewController
+            vc?.text = text
+        }
+        
+        else if segue.destination is ProtocolBackViewController
+        {
+            let vc = segue.destination as? ProtocolBackViewController
+            vc?.text = text
             vc?.delegate = self
-            vc?.myClosureDataBack = { text in
-                self.lbl.text = text
-            }
+        }
+        else if segue.destination is ClosureBackViewController {
+            let vc = segue.destination as? ClosureBackViewController
+                vc?.text = text
+                vc?.myClosureDataBack = { text in
+                    self.lbl.text = text
+                }
+        }
+        else if segue.destination is NotificationCenterBackViewController {
+            let vc = segue.destination as? NotificationCenterBackViewController
+                vc?.text = text
+        }
+    }
+    @IBAction func cancel(_ unwindSegue: UIStoryboardSegue) {
+        if let vc = unwindSegue.source as? UnwindBackViewController {
+            lbl.text = vc.sendData
         }
     }
 }

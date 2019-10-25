@@ -7,17 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4817C7B42362C42E0062871F /* ProtocolBackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4817C7B32362C42E0062871F /* ProtocolBackViewController.swift */; };
+		4817C7B62362C5190062871F /* ClosureBackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4817C7B52362C5190062871F /* ClosureBackViewController.swift */; };
+		4817C7B82362C5BD0062871F /* NotificationCenterBackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4817C7B72362C5BD0062871F /* NotificationCenterBackViewController.swift */; };
+		4817C7BB2362DC9A0062871F /* UnwindBackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4817C7BA2362DC9A0062871F /* UnwindBackViewController.swift */; };
 		482DED8423606CBE0077FCC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482DED8323606CBE0077FCC2 /* AppDelegate.swift */; };
 		482DED8623606CBE0077FCC2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482DED8523606CBE0077FCC2 /* SceneDelegate.swift */; };
 		482DED8823606CBE0077FCC2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482DED8723606CBE0077FCC2 /* ViewController.swift */; };
 		482DED8B23606CBE0077FCC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 482DED8923606CBE0077FCC2 /* Main.storyboard */; };
 		482DED8D23606CC10077FCC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 482DED8C23606CC10077FCC2 /* Assets.xcassets */; };
 		482DED9023606CC10077FCC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 482DED8E23606CC10077FCC2 /* LaunchScreen.storyboard */; };
-		482DED9B236071370077FCC2 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482DED99236071370077FCC2 /* SecondViewController.swift */; };
-		482DED9C236071370077FCC2 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 482DED9A236071370077FCC2 /* SecondViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4817C7B32362C42E0062871F /* ProtocolBackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolBackViewController.swift; sourceTree = "<group>"; };
+		4817C7B52362C5190062871F /* ClosureBackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosureBackViewController.swift; sourceTree = "<group>"; };
+		4817C7B72362C5BD0062871F /* NotificationCenterBackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCenterBackViewController.swift; sourceTree = "<group>"; };
+		4817C7BA2362DC9A0062871F /* UnwindBackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnwindBackViewController.swift; sourceTree = "<group>"; };
 		482DED8023606CBE0077FCC2 /* PassData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PassData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		482DED8323606CBE0077FCC2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		482DED8523606CBE0077FCC2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,8 +32,6 @@
 		482DED8C23606CC10077FCC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		482DED8F23606CC10077FCC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		482DED9123606CC10077FCC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		482DED99236071370077FCC2 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		482DED9A236071370077FCC2 /* SecondViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,8 +71,10 @@
 				482DED8C23606CC10077FCC2 /* Assets.xcassets */,
 				482DED8E23606CC10077FCC2 /* LaunchScreen.storyboard */,
 				482DED9123606CC10077FCC2 /* Info.plist */,
-				482DED99236071370077FCC2 /* SecondViewController.swift */,
-				482DED9A236071370077FCC2 /* SecondViewController.xib */,
+				4817C7B32362C42E0062871F /* ProtocolBackViewController.swift */,
+				4817C7B52362C5190062871F /* ClosureBackViewController.swift */,
+				4817C7B72362C5BD0062871F /* NotificationCenterBackViewController.swift */,
+				4817C7BA2362DC9A0062871F /* UnwindBackViewController.swift */,
 			);
 			path = PassData;
 			sourceTree = "<group>";
@@ -131,7 +137,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				482DED9C236071370077FCC2 /* SecondViewController.xib in Resources */,
 				482DED9023606CC10077FCC2 /* LaunchScreen.storyboard in Resources */,
 				482DED8D23606CC10077FCC2 /* Assets.xcassets in Resources */,
 				482DED8B23606CBE0077FCC2 /* Main.storyboard in Resources */,
@@ -145,10 +150,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				482DED9B236071370077FCC2 /* SecondViewController.swift in Sources */,
+				4817C7B42362C42E0062871F /* ProtocolBackViewController.swift in Sources */,
 				482DED8823606CBE0077FCC2 /* ViewController.swift in Sources */,
 				482DED8423606CBE0077FCC2 /* AppDelegate.swift in Sources */,
 				482DED8623606CBE0077FCC2 /* SceneDelegate.swift in Sources */,
+				4817C7B62362C5190062871F /* ClosureBackViewController.swift in Sources */,
+				4817C7BB2362DC9A0062871F /* UnwindBackViewController.swift in Sources */,
+				4817C7B82362C5BD0062871F /* NotificationCenterBackViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
