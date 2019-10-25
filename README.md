@@ -1,4 +1,4 @@
 # PassData
-Pass data between ViewControllers \n
-Swift 3, 4, 5 \n
+Pass data between ViewControllers
+Swift 3, 4, 5 
 iOS 9*
